@@ -6,6 +6,13 @@ describe('Client connectivity Policy Tests', () => {
     loginAndNavigateToAccessPolicy()
   })
 
+  it('Access Policy UI is rendered correctly', () => {
+    assertAccessPolicyUi()
+  })
+
+  it('Actions menu contains expected items', () => {
+    assertActionsMenuItems(MENU_ITEMS)
+  })
 
 
   it('New Rule form should display the required fields and controls', () => {
